@@ -14,13 +14,13 @@
         <?php require_once __DIR__ . '/Person.php'; ?>
         <div class="row">
             <?php
-            $person1 = new Person("John Doe", "Frontend Developer");
+            $person1 = new Person("John Doe", "Frontend Developer", "USA");
             $person1->display();
 
-            $person2 = new Person("Jane Smith", "Backend Developer");
+            $person2 = new Person("Jane Smith", "Backend Developer", "Nigeria");
             $person2->display();
 
-            $person3 = new Person("Alice Brown", "Full Stack Developer");
+            $person3 = new Person("Alice Brown", "Full Stack Developer", "Portugal");
             $person3->display();
             ?>
         </div>

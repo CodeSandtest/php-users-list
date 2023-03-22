@@ -3,11 +3,13 @@ class Person
 {
     private $name;
     private $role;
+    private $location;
 
-    public function __construct($name, $role)
+    public function __construct($name, $role, $location)
     {
         $this->name = $name;
         $this->role = $role;
+        $this->location = $location;
     }
 
     public function display()
@@ -20,6 +22,7 @@ class Person
         echo '<div>';
         echo '<h5 class="card-title mb-0">' . $this->name . '</h5>';
         echo '<p class="card-text">Role: ' . $this->role . '</p>';
+        echo '<p class="card-text">Location: ' . $this->location . '</p>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
